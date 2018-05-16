@@ -2,3 +2,18 @@
 
 @import './variables';
 @import './mixins';
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&subset=cyrillic');
+
+* {
+  color: $defaultColor;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  color: $defaultColor;
+
+  margin: 0;
+  padding: 0;
+}
