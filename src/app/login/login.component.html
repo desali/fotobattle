@@ -1,14 +1,14 @@
 
 <div class="login w-100 h-100 d-flex align-items-center justify-content-center">
-  <form class="login-form">
+  <form class="login-form" name="form" (submit)="login($event)">
     <div class="row">
       <h4 class="input-title">Login</h4>
       <div class="input-group input-group-icon">
-        <input type="email" placeholder="Email Adress"/>
-        <div class="input-icon"><i class="fa fa-envelope"></i></div>
+        <input id="username" type="text" placeholder="Username"/>
+        <div class="input-icon"><i class="fa fa-sign-in-alt"></i></div>
       </div>
       <div class="input-group input-group-icon">
-        <input type="password" placeholder="Password"/>
+        <input id="password" type="password" placeholder="Password"/>
         <div class="input-icon"><i class="fa fa-key"></i></div>
       </div>
     </div>

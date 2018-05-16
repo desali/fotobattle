@@ -1,30 +1,34 @@
 
 <div class="registration w-100 h-100 d-flex align-items-center justify-content-center">
-  <form class="registration-form">
+  <form class="registration-form" name="form" (submit)=register($event)>
     <div class="row">
       <h4 class="input-title">Account</h4>
       <div class="input-group input-group-icon">
-        <input type="text" placeholder="Full Name"/>
+        <input type="text" id="fullname" placeholder="Full Name"/>
         <div class="input-icon"><i class="fa fa-user"></i></div>
       </div>
       <div class="input-group input-group-icon">
-        <input type="email" placeholder="Email Adress"/>
+        <input type="text" id="username" placeholder="Username"/>
+        <div class="input-icon"><i class="fa fa-sign-in-alt"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="email" id="email" placeholder="Email Adress"/>
         <div class="input-icon"><i class="fa fa-envelope"></i></div>
       </div>
       <div class="input-group input-group-icon">
-        <input type="password" placeholder="Password"/>
+        <input type="password" id="password" placeholder="Password"/>
         <div class="input-icon"><i class="fa fa-key"></i></div>
       </div>
       <div class="input-group input-group-icon">
-        <input type="repassword" placeholder="Repeat password"/>
+        <input type="repassword" id="repassword" placeholder="Repeat password"/>
         <div class="input-icon"><i class="fa fa-key"></i></div>
       </div>
       <div class="input-group">
-        <select>
+        <select id="city">
           <option value="default">Choose your city</option>
-          <option>Astana</option>
-          <option>Almaty</option>
-          <option>Aqtau</option>
+          <option value="astana">Astana</option>
+          <option value="astana">Almaty</option>
+          <option value="astana">Aqtau</option>
         </select>
       </div>
     </div>
@@ -32,20 +36,20 @@
       <h4 class="input-title">Date of Birth</h4>
       <div class="input-group">
         <div class="col-third">
-          <input type="text" placeholder="DD"/>
+          <input type="text" id="day" placeholder="DD"/>
         </div>
         <div class="col-third">
-          <input type="text" placeholder="MM"/>
+          <input type="text" id="month" placeholder="MM"/>
         </div>
         <div class="col-third">
-          <input type="text" placeholder="YYYY"/>
+          <input type="text" id="year" placeholder="YYYY"/>
         </div>
       </div>
     </div>
 
     <div class="row">
       <h4 class="input-title">Gender</h4>
-      <div class="input-group">
+      <div class="input-group" id="gender">
         <input type="radio" name="gender" value="male" id="gender-male"/>
         <label for="gender-male">Male</label>
         <input type="radio" name="gender" value="female" id="gender-female"/>
