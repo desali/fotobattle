@@ -17,14 +17,14 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   login(username, password) {
-    return this.http.post<LoginResponse>('http://192.168.100.9:3000/api/login', {
+    return this.http.post<LoginResponse>('http://192.168.100.2:3000/api/login', {
       username: username,
       password: password
     })
   }
 
   register(fullname, username, email, password, city, birthday, gender) {
-    return this.http.post<RegistrationResponse>('http://192.168.100.9:3000/api/register', {
+    return this.http.post<RegistrationResponse>('http://192.168.100.2:3000/api/register', {
       username: username,
       fullname: fullname,
       email: email,
